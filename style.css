@@ -90,6 +90,26 @@ main{
     font-weight:bold;
 }
 
+.observaciones{
+
+    text-align:left;
+
+    margin-top:15px;
+
+    padding-left:20px;
+}
+
+.observaciones li{
+
+    margin-bottom:15px;
+
+    line-height:1.6;
+
+    color:#334155;
+
+    font-size:16px;
+}
+
 .activo{
 
     color:#16a34a;
