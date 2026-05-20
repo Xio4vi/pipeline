@@ -7,113 +7,158 @@
 body{
 
     font-family:Arial, Helvetica, sans-serif;
+
     background:#0f172a;
+
     color:white;
 }
 
 header{
 
     text-align:center;
+
     padding:40px;
+
     background:#111827;
+
+    border-bottom:3px solid #22c55e;
 }
 
 header h1{
 
     font-size:40px;
+
     margin-bottom:10px;
+
+    color:#22c55e;
 }
 
-.hero{
+main{
 
-    display:flex;
-    justify-content:center;
-    margin-top:30px;
+    width:90%;
+
+    margin:auto;
+
+    margin-top:40px;
 }
 
-.hero img{
+.dashboard{
 
-    width:180px;
-}
+    display:grid;
 
-.cards{
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 
-    display:flex;
-    justify-content:center;
-    gap:30px;
-    flex-wrap:wrap;
-
-    margin-top:50px;
-    padding:20px;
+    gap:25px;
 }
 
 .card{
 
     background:#1e293b;
 
-    width:300px;
-
-    padding:25px;
+    padding:30px;
 
     border-radius:15px;
 
     text-align:center;
 
     transition:0.3s;
+
+    border:1px solid #334155;
 }
 
 .card:hover{
 
-    transform:translateY(-10px);
-}
+    transform:translateY(-8px);
 
-.card img{
-
-    width:90px;
-    margin-bottom:20px;
+    border-color:#22c55e;
 }
 
 .card h2{
 
-    margin-bottom:15px;
+    margin-bottom:20px;
+
+    color:#38bdf8;
+}
+
+.card p{
+
+    font-size:28px;
+
+    font-weight:bold;
+}
+
+.console{
+
+    margin-top:50px;
+
+    background:#111827;
+
+    padding:30px;
+
+    border-radius:15px;
+}
+
+.console h2{
+
+    margin-bottom:20px;
+
+    color:#22c55e;
+}
+
+.terminal{
+
+    background:black;
+
+    color:#22c55e;
+
+    padding:20px;
+
+    height:250px;
+
+    overflow:auto;
+
+    border-radius:10px;
+
+    font-family:monospace;
+
+    margin-bottom:20px;
+
+    border:1px solid #22c55e;
 }
 
 button{
 
-    margin-top:20px;
-
-    padding:12px 25px;
+    padding:15px 25px;
 
     border:none;
 
     border-radius:10px;
 
-    background:#3b82f6;
+    background:#22c55e;
 
     color:white;
 
+    font-size:16px;
+
     cursor:pointer;
 
-    font-size:16px;
+    transition:0.3s;
 }
 
 button:hover{
 
-    background:#2563eb;
-}
-
-#estado{
-
-    margin-top:20px;
+    background:#16a34a;
 }
 
 footer{
 
-    margin-top:50px;
-
     text-align:center;
+
+    margin-top:50px;
 
     padding:20px;
 
     background:#111827;
+
+    border-top:2px solid #22c55e;
 }

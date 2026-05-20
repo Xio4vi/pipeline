@@ -1,8 +1,23 @@
-function verificarEstado(){
+let ejecuciones = 0;
 
-    const estado = document.getElementById("estado");
+function ejecutarPipeline(){
 
-    estado.innerHTML = "✅ Pipeline funcionando correctamente";
+    ejecuciones++;
 
-    estado.style.color = "#22c55e";
+    document.getElementById("contador").innerHTML =
+    ejecuciones;
+
+    const terminal = document.getElementById("terminal");
+
+    terminal.innerHTML += `
+    
+    <br>> Initializing pipeline...
+    <br>> Checking repository...
+    <br>> Running automated tests...
+    <br>> Validating deployment...
+    <br>> Pipeline executed successfully ✅
+    
+    `;
+
+    terminal.scrollTop = terminal.scrollHeight;
 }

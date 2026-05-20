@@ -1,11 +1,105 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title>Nuevo Dashboard</title>
-</head>
-<body style="background:black;color:white;text-align:center">
+<html lang="es">
 
-    <h1>DASHBOARD ACTUALIZADO 🚀</h1>
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DevOps Monitoring Console</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <h1>DEVOPS CI/CD MONITOR</h1>
+
+        <p>
+            Pipeline de Integración Continua con GitHub Actions
+        </p>
+
+    </header>
+
+    <main>
+
+        <section class="dashboard">
+
+            <div class="card">
+
+                <h2>Pipeline Status</h2>
+
+                <p id="pipeline-status">
+                    🟢 ONLINE
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h2>Deploy Status</h2>
+
+                <p id="deploy-status">
+                    ✅ SUCCESS
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h2>Build Time</h2>
+
+                <p>
+                    1.2s
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h2>Executions</h2>
+
+                <p id="contador">
+                    0
+                </p>
+
+            </div>
+
+        </section>
+
+        <section class="console">
+
+            <h2>Pipeline Logs</h2>
+
+            <div class="terminal" id="terminal">
+
+                > Waiting for pipeline execution...
+
+            </div>
+
+            <button onclick="ejecutarPipeline()">
+
+                Ejecutar Validación
+
+            </button>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>
+            GitHub Actions | CI/CD | DevOps Monitoring
+        </p>
+
+    </footer>
+
+    <script src="script.js"></script>
 
 </body>
+
 </html>
