@@ -1,22 +1,22 @@
-let ejecuciones = 0;
+let contador = 0;
 
-function ejecutarPipeline(){
+function ejecutarValidacion(){
 
-    ejecuciones++;
+    contador++;
 
     document.getElementById("contador").innerHTML =
-    ejecuciones;
+    contador;
 
     const terminal = document.getElementById("terminal");
 
     terminal.innerHTML += `
-    
-    <br>> Initializing pipeline...
-    <br>> Checking repository...
-    <br>> Running automated tests...
-    <br>> Validating deployment...
-    <br>> Pipeline executed successfully ✅
-    
+
+    <br>> Iniciando validación...
+    <br>> Verificando repositorio...
+    <br>> Ejecutando pruebas automáticas...
+    <br>> Validando despliegue web...
+    <br>> Validación completada correctamente ✅
+
     `;
 
     terminal.scrollTop = terminal.scrollHeight;

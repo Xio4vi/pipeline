@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>DevOps Monitoring Console</title>
+    <title>Sistema de Integración Continua</title>
 
     <link rel="stylesheet" href="style.css">
 
@@ -16,51 +16,53 @@
 
     <header>
 
-        <h1>DEVOPS CI/CD MONITOR</h1>
+        <h1>
+            Sistema de Monitoreo de Integración Continua
+        </h1>
 
         <p>
-            Pipeline de Integración Continua con GitHub Actions
+            Automatización de pruebas y validación de despliegue
         </p>
 
     </header>
 
     <main>
 
-        <section class="dashboard">
+        <section class="panel">
 
             <div class="card">
 
-                <h2>Pipeline Status</h2>
+                <h2>Estado del Pipeline</h2>
 
-                <p id="pipeline-status">
-                    🟢 ONLINE
+                <p class="activo">
+                    ACTIVO
                 </p>
 
             </div>
 
             <div class="card">
 
-                <h2>Deploy Status</h2>
+                <h2>Estado del Despliegue</h2>
 
-                <p id="deploy-status">
-                    ✅ SUCCESS
+                <p class="correcto">
+                    FUNCIONANDO
                 </p>
 
             </div>
 
             <div class="card">
 
-                <h2>Build Time</h2>
+                <h2>Tiempo de Ejecución</h2>
 
                 <p>
-                    1.2s
+                    1.2 segundos
                 </p>
 
             </div>
 
             <div class="card">
 
-                <h2>Executions</h2>
+                <h2>Pruebas Ejecutadas</h2>
 
                 <p id="contador">
                     0
@@ -70,17 +72,19 @@
 
         </section>
 
-        <section class="console">
+        <section class="consola">
 
-            <h2>Pipeline Logs</h2>
+            <h2>
+                Registro de Validaciones
+            </h2>
 
             <div class="terminal" id="terminal">
 
-                > Waiting for pipeline execution...
+                > Esperando ejecución automática...
 
             </div>
 
-            <button onclick="ejecutarPipeline()">
+            <button onclick="ejecutarValidacion()">
 
                 Ejecutar Validación
 
@@ -93,7 +97,7 @@
     <footer>
 
         <p>
-            GitHub Actions | CI/CD | DevOps Monitoring
+            Proyecto de Automatización | GitHub Actions | CI/CD
         </p>
 
     </footer>

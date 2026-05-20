@@ -8,29 +8,34 @@ body{
 
     font-family:Arial, Helvetica, sans-serif;
 
-    background:#0f172a;
+    background:#f1f5f9;
 
-    color:white;
+    color:#1e293b;
 }
 
 header{
 
+    background:#0f172a;
+
+    color:white;
+
     text-align:center;
 
-    padding:40px;
-
-    background:#111827;
-
-    border-bottom:3px solid #22c55e;
+    padding:40px 20px;
 }
 
 header h1{
 
-    font-size:40px;
+    font-size:38px;
 
     margin-bottom:10px;
+}
 
-    color:#22c55e;
+header p{
+
+    color:#cbd5e1;
+
+    font-size:18px;
 }
 
 main{
@@ -42,7 +47,7 @@ main{
     margin-top:40px;
 }
 
-.dashboard{
+.panel{
 
     display:grid;
 
@@ -53,31 +58,29 @@ main{
 
 .card{
 
-    background:#1e293b;
+    background:white;
 
     padding:30px;
 
     border-radius:15px;
 
+    box-shadow:0 4px 12px rgba(0,0,0,0.1);
+
     text-align:center;
 
     transition:0.3s;
-
-    border:1px solid #334155;
 }
 
 .card:hover{
 
-    transform:translateY(-8px);
-
-    border-color:#22c55e;
+    transform:translateY(-5px);
 }
 
 .card h2{
 
     margin-bottom:20px;
 
-    color:#38bdf8;
+    color:#0f172a;
 }
 
 .card p{
@@ -87,27 +90,37 @@ main{
     font-weight:bold;
 }
 
-.console{
+.activo{
+
+    color:#16a34a;
+}
+
+.correcto{
+
+    color:#2563eb;
+}
+
+.consola{
 
     margin-top:50px;
 
-    background:#111827;
+    background:white;
 
     padding:30px;
 
     border-radius:15px;
+
+    box-shadow:0 4px 12px rgba(0,0,0,0.1);
 }
 
-.console h2{
+.consola h2{
 
     margin-bottom:20px;
-
-    color:#22c55e;
 }
 
 .terminal{
 
-    background:black;
+    background:#0f172a;
 
     color:#22c55e;
 
@@ -122,43 +135,41 @@ main{
     font-family:monospace;
 
     margin-bottom:20px;
-
-    border:1px solid #22c55e;
 }
 
 button{
 
     padding:15px 25px;
 
+    background:#2563eb;
+
+    color:white;
+
     border:none;
 
     border-radius:10px;
 
-    background:#22c55e;
-
-    color:white;
+    cursor:pointer;
 
     font-size:16px;
-
-    cursor:pointer;
 
     transition:0.3s;
 }
 
 button:hover{
 
-    background:#16a34a;
+    background:#1d4ed8;
 }
 
 footer{
 
-    text-align:center;
-
     margin-top:50px;
 
+    background:#0f172a;
+
+    color:white;
+
+    text-align:center;
+
     padding:20px;
-
-    background:#111827;
-
-    border-top:2px solid #22c55e;
 }
