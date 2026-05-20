@@ -1,0 +1,32 @@
+name: Pipeline CI
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+
+  pruebas:
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+    - name: Descargar repositorio
+      uses: actions/checkout@v4
+
+    - name: Verificar archivos del proyecto
+      run: |
+        echo "Verificando archivos..."
+
+        test -f index.html
+        test -f style.css
+        test -f script.js
+
+    - name: Validar despliegue web
+      run: |
+        curl -I https://xio4vi.github.io/pipeline/
+
+    - name: Finalización
+      run: echo "Pipeline ejecutado correctamente"
