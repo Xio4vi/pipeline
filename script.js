@@ -1,5 +1,8 @@
-function mostrarMensaje(){
+function verificarEstado(){
 
-    document.getElementById("mensaje").innerHTML =
-    "La página funciona correctamente";
+    const estado = document.getElementById("estado");
+
+    estado.innerHTML = "✅ Pipeline funcionando correctamente";
+
+    estado.style.color = "#22c55e";
 }
